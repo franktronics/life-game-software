@@ -11,11 +11,13 @@
     ```
 - Activate the virtual environment
     ```bash
-    source <virtual-environment-name>/bin/activate
+    source <virtual-environment-name>/bin/activate # Linux
+    <virtual-environment-name>\Scripts\activate # Windows
     ```
     For example:
     ```bash
-    source venv/bin/activate
+    source venv/bin/activate # Linux
+    venv\Scripts\activate # Windows
     ```
 - Install the requirements
     ```bash
