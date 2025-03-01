@@ -1,0 +1,8 @@
+QPushButton {
+    max-width: 100px;
+}
+
+QLabel {
+    padding: 0;
+    margin: 0;
+}
