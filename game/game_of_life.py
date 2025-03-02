@@ -56,12 +56,6 @@ class GameOfLife(QObject):
                     self.matrix[(i + 1) % self.rows, (j + 1) % self.cols]
                 ])
 
-                # Appliquer les règles du jeu de la vie
-                # 1. Une cellule vivante avec moins de 2 voisins vivants meurt (sous-population)
-                # 2. Une cellule vivante avec 2 ou 3 voisins vivants survit
-                # 3. Une cellule vivante avec plus de 3 voisins vivants meurt (surpopulation)
-                # 4. Une cellule morte avec exactement 3 voisins vivants devient vivante (reproduction)
-
                 if self.matrix[i, j] == 1:
                     if neighbors < 2 or neighbors > 3:
                         next_gen[i, j] = 0
